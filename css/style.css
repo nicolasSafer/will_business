@@ -142,18 +142,9 @@ nav {
 
 
 header {
-  /* position: block; */
-  /* padding-top: 200px; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2rem;
-  background-color: #111d31;
+
   margin-top: 91px;
-  right: 100px;
-  left: 100px;
-  padding-left: 50px;
-color: white;
+border-bottom: 5px solid #09111e; /* Borda inferior branca */
   
 }
 
@@ -181,6 +172,18 @@ header .image img {
   margin: auto;
 }
 
+header .content {
+  margin: 0; /* Remove qualquer margem */
+  padding-top: 100px; /* Aumenta o padding superior */
+  padding-bottom: 50px; /* Ajusta o padding inferior */
+  line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
+}
+
+header .content h1, 
+header .content p {
+  margin: 0; /* Remove margens de ambos */
+  padding: 0; /* Remove qualquer padding existente */
+}
 
 .content {
   width: 300px;
@@ -201,15 +204,18 @@ header .image img {
 
 }
 
-
+.section-low{
+ 
+  border-bottom: 5px solid #111d31; 
+}
 
 section .section-header-low{
-  background-color: #111d31;
+  background-color: #09111e;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #111d31;
+  
   padding: 20px;
   text-align: center;
   height: 200px;
@@ -218,7 +224,9 @@ section .section-header-low{
 
 }
 .itens-lista{
+  border-top: 5px solid #09111e; 
   background-color: #111d31;
+  border-bottom: 5px solid #09111e; 
 }
 
 footer {
@@ -231,4 +239,15 @@ footer {
 
 footer p a {
 	margin: 5px 15px;
+}
+
+.c-item{
+height: 500px;
+}
+
+.c-img{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+
 }
